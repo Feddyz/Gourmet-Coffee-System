@@ -1,23 +1,23 @@
 package base;
 import java.util.*;
 public class CoffeeAccessory {
-    static String code = "";
-    static String description = "";
-    static Double price = 0.00;
+    String code = "";
+    String description = "";
+    Double price = 0.00;
     public CoffeeAccessory(String inicode,String inidescription,Double iniprice){
         this.code=inicode;
         this.description=inidescription;
         this.price=iniprice;
     }
-    public static String getCode() {
+    public String getCode() {
         return code;
     }
 
-    public static String getDescription() {
+    public String getDescription() {
         return description;
     }
 
-    public static double getPrice() {
+    public double getPrice() {
         return price;
     }
 
