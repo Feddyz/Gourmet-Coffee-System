@@ -1,23 +1,23 @@
 package base;
-import java.util.*;
-public class CoffeeAccessory {
-    String code = "";
-    String description = "";
-    Double price = 0.00;
-    public CoffeeAccessory(String inicode,String inidescription,Double iniprice){
+
+public class Product {
+    static String code = "";
+    static String description = "";
+    static Double price = 0.00;
+    public Product(String inicode, String inidescription, Double iniprice){
         this.code=inicode;
         this.description=inidescription;
         this.price=iniprice;
     }
-    public String getCode() {
+    public static String getCode() {
         return code;
     }
 
-    public String getDescription() {
+    public static String getDescription() {
         return description;
     }
 
-    public double getPrice() {
+    public static double getPrice() {
         return price;
     }
 
@@ -32,8 +32,8 @@ public class CoffeeAccessory {
     public void setPrice(double newPrice) {
         price = newPrice;
     }
-    public boolean eaquals(Object object){
-        return object instanceof CoffeeAccessory && getCode().equals(((CoffeeAccessory)object).getCode());
+    public boolean equals(Object object){
+        return object instanceof Product && getCode().equals(((Product)object).getCode());
     }
     public String toString(){
         return getCode()+"_"+getDescription()+"_"+getPrice();
