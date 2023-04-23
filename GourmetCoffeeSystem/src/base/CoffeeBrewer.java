@@ -1,6 +1,6 @@
 package base;
 
-public class CoffeeBrewer extends CoffeeAccessory{
+public class CoffeeBrewer extends Product {
     static String model = "";
     static String waterSupply = "";
     static int capacity =0;
