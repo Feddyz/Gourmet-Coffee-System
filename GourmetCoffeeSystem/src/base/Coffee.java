@@ -1,13 +1,13 @@
 package base;
 
 public class Coffee extends Product {
-    static String origin = "";
-    static String roast = "";
-    static String flavor = "";
-    static String aroma = "";
-    static String acidity = "";
-    static String body = "";
-    static String smallCharge ="";
+    String origin = "";
+    String roast = "";
+    String flavor = "";
+    String aroma = "";
+    String acidity = "";
+    String body = "";
+    String smallCharge ="";
 
     public Coffee(String inicode, String inidescription, Double iniprice,String iniorigin,String iniroast,String iniflavor,String iniaroma,String iniacidity,String inibody,String inismallCharge) {
         super(inicode, inidescription, iniprice);
@@ -21,47 +21,47 @@ public class Coffee extends Product {
     }
 
     //get
-    public static String getOrigin(){
+    public String getOrigin(){
         return origin;
     }
-    public static String getRoast(){
+    public String getRoast(){
         return roast;
     }
-    public static String getFlavor(){
+    public String getFlavor(){
         return flavor;
     }
-    public static String getSmallCharge(){
+    public String getSmallCharge(){
         return smallCharge;
     }
-    public static String getAroma(){
+    public String getAroma(){
         return aroma;
     }
-    public static String getAcidity(){
+    public String getAcidity(){
         return acidity;
     }
-    public static String getBody(){
+    public String getBody(){
         return body;
     }
     //set
-    public static void setOrigin(String newOrigin){
+    public void setOrigin(String newOrigin){
         origin = newOrigin;
     }
-    public static void setRoast(String newRoast){
+    public void setRoast(String newRoast){
         roast = newRoast;
     }
-    public static void setFlavor(String newFlavour){
+    public void setFlavor(String newFlavour){
         flavor= newFlavour;
     }
-    public static void setSmallCharge(String newSmallCharge){
+    public void setSmallCharge(String newSmallCharge){
         smallCharge = newSmallCharge;
     }
-    public static void setAroma(String newAroma){
+    public void setAroma(String newAroma){
         aroma = newAroma;
     }
-    public static void setAcidity(String newAcidity){
+    public void setAcidity(String newAcidity){
         acidity = newAcidity;
     }
-    public static void setBody(String newBody){
+    public void setBody(String newBody){
         body = newBody;
     }
 
