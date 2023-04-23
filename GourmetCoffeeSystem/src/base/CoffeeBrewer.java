@@ -1,8 +1,8 @@
 package base;
 
 public class CoffeeBrewer extends Product {
-    static String model = "";
-    static String waterSupply = "";
+    static model = "";
+    static waterSupply = "";
     static int capacity =0;
 
     public CoffeeBrewer(String inicode, String inidescription, Double iniprice,String inimodel,String iniwaterSupply,int inicapacity) {
@@ -13,23 +13,23 @@ public class CoffeeBrewer extends Product {
     }
 
     //get
-    public static String getModel(){
+    public String getModel(){
         return model;
     }
-    public static String getWaterSupply(){
+    public String getWaterSupply(){
         return waterSupply;
     }
-    public static int getCapacity(){
+    public int getCapacity(){
         return capacity;
     }
     //set
-    public static void setModel(String newModel){
+    public void setModel(String newModel){
         model=newModel;
     }
-    public static void setWaterSupply(String newWaterSupply){
+    public void setWaterSupply(String newWaterSupply){
         waterSupply = newWaterSupply;
     }
-    public static void setCapacity(int newCapacity){
+    public void setCapacity(int newCapacity){
         capacity= newCapacity;
     }
 
